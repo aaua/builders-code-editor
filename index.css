@@ -1,6 +1,21 @@
 body {
   margin: 0;
+  background-color: #1e1e1e;
 }
+
+.menu {
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > * {
+  display: table-cell;
+  padding: 5px 10px;
+  border: 1px #5a5a5a solid;
+  color: #5a5a5a;
+}
+
 
 #main {
   position: fixed;

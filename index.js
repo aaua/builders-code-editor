@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, ipcMain} = require('electron')
 const path = require('path')
 const url = require('url')
 
@@ -17,8 +17,12 @@ function createWindow () {
     slashes: true
   }))
 
+  ipcMain.on('drop-file', (event, path) => {
+    event.sender.send('open-file', path);
+  })
+
   // Open the DevTools.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', () => {
