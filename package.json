@@ -1,0 +1,23 @@
+{
+  "name": "builders-code-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^1.6.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aaua/builders-code-editor.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaua/builders-code-editor/issues"
+  },
+  "homepage": "https://github.com/aaua/builders-code-editor#readme"
+}
